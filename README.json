@@ -1,0 +1,15 @@
+{
+  "name": "zcore-tests",
+  "description": "Test scripts for zCore OS.",
+  "authors": [{
+    "name": "Runji Wang",
+    "email": "wangrunji0408@163.com"
+  }, {
+    "name": "Luoyuan Xiao",
+    "email": "xiaoluoyuan@163.com"
+  }],
+  "keywords": ["zcore", "test", "libc"],
+  "repo": "kern-crates/zcore-tests",
+  "test_repos": ["https://github.com/kern-crates/zCore.git"],
+  "doc_url": "https://github.com/kern-crates/zcore-tests/blob/main/README.md"
+}
