@@ -29,7 +29,7 @@ FAILED_PATTERN = [
 
 
 class LinuxTestRunner(TestRunner):
-    BASE_CMD = "cd ../zCore && make MODE=release LINUX=1 TEST=1 ARCH=%s" % args.arch
+    BASE_CMD = "cd ../ && make MODE=release LINUX=1 TEST=1 ARCH=%s" % args.arch
 
     def build_cmdline(self) -> str:
         return self.BASE_CMD + (" LIBOS=1" if args.libos else "")

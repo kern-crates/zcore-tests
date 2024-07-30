@@ -31,7 +31,7 @@ FAILED_PATTERN = [
 
 
 class ZirconTestRunner(TestRunner):
-    BASE_CMD = "cd ../zCore && make MODE=release ZBI=core-tests TEST=1"
+    BASE_CMD = "cd ../ && make MODE=release ZBI=core-tests TEST=1"
 
     def build_cmdline(self) -> str:
         return self.BASE_CMD + (" LIBOS=1" if args.libos else "")

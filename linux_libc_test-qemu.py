@@ -19,7 +19,7 @@ TIMEOUT = 10
 FAILED_PATTERN = ["failed","ERROR","Error","panicked","Hangup","Unknown signal"]
 
 class LinuxTestRunner(TestRunner):
-    BASE_CMD = "make -C ../zCore MODE=release LINUX=1 TEST=1 ARCH=%s" % args.arch
+    BASE_CMD = "make -C ../ MODE=release LINUX=1 TEST=1 ARCH=%s" % args.arch
 
     def build_cmdline(self) -> str:
         return self.BASE_CMD
