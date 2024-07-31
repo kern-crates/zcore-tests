@@ -11,7 +11,7 @@ zircon-core-test:
 libc-test:
 ifeq ($(ARCH), x86_64)
 	@[ -e ../rootfs/$(ARCH)/libc-test ] || \
-		git clone https://github.com/rcore-os/libc-test.git --depth 1 ../rootfs/$(ARCH)/libc-test
+		git clone https://github.com/kern-crates/libc-test.git --depth 1 ../rootfs/$(ARCH)/libc-test
 
 	cd ../rootfs/x86_64/libc-test && cp config.mak.def config.mak && echo 'CC := musl-gcc' >> config.mak && make -j
 #   cd ../rootfs/$(ARCH)/libc-test && cp libc-test/functional/tls_align-static.exe src/functional/tls_align-static.exe # why copy this ?
